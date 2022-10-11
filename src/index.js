@@ -71,8 +71,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 50);
         //stop interval
         document.getElementById('stop').addEventListener('click', ()=>{
-            document.body.style.backgroundColor = 'white';
+            document.body.style.backgroundColor = 'rgb(255,255,255)';
             clearInterval(interval);
+            console.log(document.body.style.backgroundColor);
         });
     });
     console.log('Page loaded');
@@ -82,4 +83,6 @@ document.addEventListener('DOMContentLoaded', () => {
 function rnd(){
     return Math.floor(Math.random() * 255) + 1;
 }
+
+
 
